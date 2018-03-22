@@ -76,7 +76,7 @@ describe 'Movie' do
         expect(movie.release_date).to eq(1990)
       end
 
-      xit 'can be created in a block' do
+      it 'can be created in a block' do
         movie = can_be_created_in_a_block
         args = { title: "The Room", release_date: 2003 }
         movie = can_be_created_in_a_block(args)
