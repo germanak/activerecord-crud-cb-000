@@ -45,7 +45,7 @@ end
 def can_find_the_first_item_from_the_database_using_id
   sql = "SELECT * FROM movies WHERE id = ?"
 
-  ActiveRecord::Base.connection.execute(sql, @id)
+  ActiveRecord::Base.connection.execute(sql, @id).first.title
 end
 
 def can_find_by_multiple_attributes
