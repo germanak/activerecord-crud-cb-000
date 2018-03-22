@@ -32,7 +32,7 @@ def can_be_created_in_a_block(title: nil, release_date: nil)
     end
   else
     attributes = {
-      title: title
+      title: title,
       release_date: release_date
     }
     Movie.create(attributes)
